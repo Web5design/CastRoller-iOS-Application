@@ -10,6 +10,8 @@
 		<ul channel="${Id}"/>
 		</li>
 	</script>
+	
+	
 	<script id="episodeThumbsTemplate" type="text/x-jquery-tmpl">
       	<li>
              	<a href='episode.html?eid=${Id}'>
@@ -17,6 +19,9 @@
            	</a>
           </li>
 	</script>
+	
+	
+	
 <script type="text/javascript">
 function displayChannel(channelId)
 {
@@ -25,12 +30,9 @@ function displayChannel(channelId)
 
 		$.getJSON(url, null, function(data)
 			{
-			alert(data);
 var resized = resizeImages(data.d,160,90);
 
 var match = $('ul[channel="' + channelId + '"]');
-
-alert(match.length);
 
 $("#episodeThumbsTemplate").tmpl(resized).appendTo(match);
 				
