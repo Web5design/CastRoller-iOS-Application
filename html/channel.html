@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Channel</title>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+		
+	
+	<script id="episodeThumbsTemplate" type="text/x-jquery-tmpl">
+      	<li>
+             	<a href='episode.html?eid=${Id}'>
+                 	<img src="${LinkUrl}" alt="${Name}"/>
+                 	<h2>${Name}</h2>      
+           	</a>
+          </li>
+	</script>
+	
+	
+	
+<script type="text/javascript">
+
+function displayEpisodes(channelId)
+{
+	var url = "http://api.castroller.com/v1.svc/GetChannelEpisodeImages?channelId=" + channelId + "&$format=json&$callback=?";
+	
+	
+	$.getJSON(url, null, function(data)
+		{
+			
+		var resized = resizeImages(data.d,160,90);
+		
+		$("#episodeThumbsTemplate").tmpl(resized).appendTo("#episodes");
+		
+		
+		}
+	);
+}
+
+
+
+$(function(){
+	var channelId= querySt("cid");
+	
+	displayEpisodes(channelId);
+	
+	var url = "http://api.castroller.com/v1.svc/Channels(" + channelId + "L)?$format=json&$callback=?";
+	
+	$.getJSON(url, null, function(data){
+
+	
+		              
+		$('#description').append(data.d.Description);
+		$('#image').attr('src', resizeImage( data.d.ImageUrl, 280,140) );
+		$('#channelName').append( data.d.Name);
+	});
+	
+	
+
+
+	
+});
+
+
+
+
+</script>
+</head>
+<body>
+<h1 id="channelName"></h1>
+<img id="image"/>
+<div id="description"></div>
+<ul id="episodes"></ul>
+</body>
+</html>
