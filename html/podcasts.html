@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>CastRoller iOS</title>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+	<script id="podcastListTemplate" type="text/x-jquery-tmpl">
+	<li><a href='podcast.html?pid=${Id}'>${Name}</a></li>
+	</script>
+<script type="text/javascript">
+$(function(){
+		$.getJSON("http://api.castroller.com/v1.svc/Podcasts?$format=json&$callback=?", null, function(data)
+			{
+				$("#podcastListTemplate").tmpl(data.d.results).appendTo("#podcasts");
+				
+			}
+			);
+});
+</script>
+</head>
+<body>
+<h1>CastRoller iOS</h1>
+<ul id="podcasts"/>
+</body>
+</html>
