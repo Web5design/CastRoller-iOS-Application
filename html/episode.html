@@ -3,6 +3,7 @@
 <title>Episode</title>
 <script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+<script src="js/json2.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript"></script>
 		
 	
@@ -18,7 +19,12 @@
 	
 	
 <script type="text/javascript">
+                     
+	var playerWidth = 320;
+	var playerHeight = 180;
+	
 
+	
 function displayEpisodes(podcastId)
 {
 	var url = "http://api.castroller.com/v1.svc/GetPodcastEpisodeImages?podcastId=" + podcastId + "&$format=json&$callback=?";
@@ -36,21 +42,105 @@ function displayEpisodes(podcastId)
 	);
 }
 
+       
+function displayDetails(episodeId)
+{
+	var url = "http://api.castroller.com/v1.svc/Episodes(" + episodeId + "L)?$expand=Podcast&$format=json&$callback=?";
+	
+	$.getJSON(url, null, function(data){
+		
+			//$("#description").append( JSON.stringify(data.d.Podcast));
+			
+		              
+		$('#description').append(data.d.Description);
+		$('#episodeName').append( data.d.Name);
+		displayPlayer(episodeId, data.d.Podcast.ImageUrl);
+	});
+}
+	
+function setPlayerImage(imageUrl)
+{                  
+	
+	var resized = resizeImage( imageUrl, playerWidth, playerHeight);
+	
+	$('#player').attr('poster', resized);
+}
+
+function displayPlayer(episodeId, podcastImageUrl)
+{
+
+	
+	var url = "http://api.castroller.com/v1.svc/Episodes(" + episodeId + "L)/EpisodeFiles?$expand=EpisodeType&$format=json&$callback=?";
+	
+	$.getJSON(url, null, function(files){
+			
+		var video = null;
+		var audio = null;
+		var image = null;
+		
+		$(files.d.results).each(function(){
+				//alert(JSON.stringify(this));
+			//
+				
+			if( this.EpisodeType.Id == 2 && video == null)
+			{
+				video = this;
+			}else if( this.EpisodeType.Id == 1 && audio == null )
+			{
+				audio = this;
+			}else if( this.EpisodeType.Id == 6 && image == null )
+			{
+			//	image = this;
+			}
+			
+			
+		});
+		
+		var playerTag;
+		var playerType;
+		var fileUrl;
+		
+		if( video != null )
+		{
+			playerType="video";
+			fileUrl = video.FileUrl;
+		}else{
+			playerType="audio";
+			fileUrl = audio.FileUrl;
+		}
+		
+		playerTag = "<" + playerType + " src='" + fileUrl + "' width=" + playerWidth + " height='" + playerHeight + "' id='player'/>";
+		
+		$('#playerArea').append(playerTag);
+		
+		
+		
+	
+		
+		if( image != null )
+		{
+			setPlayerImage(image.FileUrl);
+		}else{
+		/*	var podcastUrl = "http://api.castroller.com/v1.svc/Podcasts(" + podcastId + "L)?$format=json&$callback=?";
+			alert(podcastUrl);
+			$.getJSON(podcastUrl, null, function(data){
+					alert(data);
+				setPlayerImage(data.d.ImageUrl);
+			});
+	*/
+	alert(podcastImageUrl);
+			setPlayerImage(podcastImageUrl);
+		}
+		
+	});
+}
 
 
 $(function(){
 	var episodeId= querySt("eid");
 	
 	//displayEpisodes(podcastId);
-	
-	var url = "http://api.castroller.com/v1.svc/Episodes(" + episodeId + "L)?$format=json&$callback=?";
-	
-	$.getJSON(url, null, function(data){
-		
-		              
-		$('#description').append(data.d.Description);
-		$('#episodeName').append( data.d.Name);
-	});
+	displayDetails(episodeId);
 	
 	
 

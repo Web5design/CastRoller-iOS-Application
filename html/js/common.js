@@ -33,3 +33,4 @@ function querySt(ji) {
        }
     }
 }
+function dump(object, pad){    var indent = '\t'    if (!pad) pad = ''    var out = ''    if (object.constructor == Array){        out += '[\n'        for (var i=0; i<object.length; i++){            out += pad + indent + dump(object[i], pad + indent) + '\n'        }        out += pad + ']'    }else if (object.constructor == Object){        out += '{\n'        for (var i in object){            out += pad + indent + i + ': ' + dump(object[i], pad + indent) + '\n'        }        out += pad + '}'    }else{        out += object    }    return out}
