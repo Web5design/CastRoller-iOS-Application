@@ -10,7 +10,9 @@
 
 
 @interface SecondViewController : UIViewController {
-
+	UILabel *myLabel;
 }
+
+@property (nonatomic, retain) UILabel *myLabel;
 
 @end
