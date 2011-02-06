@@ -10,7 +10,11 @@
 
 
 @interface FirstViewController : UIViewController {
-
+	UIWebView *myWebView;
+	
 }
+
+@property (nonatomic, retain) IBOutlet UIWebView *myWebView;
+
 
 @end
