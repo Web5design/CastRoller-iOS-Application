@@ -17,8 +17,8 @@
 	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {822, 793}}";
-			sepNavSelRange = "{1248, 0}";
-			sepNavVisRange = "{655, 645}";
+			sepNavSelRange = "{1035, 0}";
+			sepNavVisRange = "{457, 770}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
@@ -27,6 +27,9 @@
 		activeExecutable = 63069EC512FC6316004A0F32 /* CastRoller */;
 		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* CastRoller */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* CastRoller */,
+		);
 		codeSenseManager = 63069ED012FC6335004A0F32 /* Code sense */;
 		executables = (
 			63069EC512FC6316004A0F32 /* CastRoller */,
@@ -54,30 +57,37 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 318645827;
-			PBXWorkspaceStateSaveDate = 318645827;
+			PBXPerProjectTemplateStateSaveDate = 318650536;
+			PBXWorkspaceStateSaveDate = 318650536;
 		};
 		perUserProjectItems = {
-			63BCE54E12FE27EA0010829F /* XCBuildMessageTextBookmark */ = 63BCE54E12FE27EA0010829F /* XCBuildMessageTextBookmark */;
-			63BCE54F12FE27EA0010829F /* PBXTextBookmark */ = 63BCE54F12FE27EA0010829F /* PBXTextBookmark */;
-			63BCE55312FE27FF0010829F /* PlistBookmark */ = 63BCE55312FE27FF0010829F /* PlistBookmark */;
-			63BCE55412FE27FF0010829F /* PBXTextBookmark */ = 63BCE55412FE27FF0010829F /* PBXTextBookmark */;
-			63BCE55512FE27FF0010829F /* PBXTextBookmark */ = 63BCE55512FE27FF0010829F /* PBXTextBookmark */;
-			63BCE55612FE27FF0010829F /* PBXTextBookmark */ = 63BCE55612FE27FF0010829F /* PBXTextBookmark */;
-			63BCE55F12FE28F10010829F /* PBXTextBookmark */ = 63BCE55F12FE28F10010829F /* PBXTextBookmark */;
-			63BCE56012FE28F10010829F /* PBXTextBookmark */ = 63BCE56012FE28F10010829F /* PBXTextBookmark */;
-			63BCE56112FE28F10010829F /* PBXTextBookmark */ = 63BCE56112FE28F10010829F /* PBXTextBookmark */;
-			63BCE56412FE29020010829F /* PBXTextBookmark */ = 63BCE56412FE29020010829F /* PBXTextBookmark */;
-			63BCE56712FE29680010829F /* PBXTextBookmark */ = 63BCE56712FE29680010829F /* PBXTextBookmark */;
-			63BCE56A12FE29800010829F /* PBXTextBookmark */ = 63BCE56A12FE29800010829F /* PBXTextBookmark */;
-			63BCE56C12FE2B670010829F /* PBXTextBookmark */ = 63BCE56C12FE2B670010829F /* PBXTextBookmark */;
-			63BCE56D12FE2B670010829F /* PBXTextBookmark */ = 63BCE56D12FE2B670010829F /* PBXTextBookmark */;
-			63BCE56E12FE2B670010829F /* PBXTextBookmark */ = 63BCE56E12FE2B670010829F /* PBXTextBookmark */;
-			63BCE57112FE2B900010829F /* PBXTextBookmark */ = 63BCE57112FE2B900010829F /* PBXTextBookmark */;
-			63BCE57412FE2BA00010829F /* PBXTextBookmark */ = 63BCE57412FE2BA00010829F /* PBXTextBookmark */;
-			63BCE57512FE2BA00010829F /* PBXTextBookmark */ = 63BCE57512FE2BA00010829F /* PBXTextBookmark */;
-			63BCE57612FE2BA00010829F /* PBXTextBookmark */ = 63BCE57612FE2BA00010829F /* PBXTextBookmark */;
-			63BCE57912FE2BEF0010829F /* PBXTextBookmark */ = 63BCE57912FE2BEF0010829F /* PBXTextBookmark */;
+			638BB34A12FE38C300114C10 /* PlistBookmark */ = 638BB34A12FE38C300114C10 /* PlistBookmark */;
+			638BB35512FE3A3F00114C10 /* PlistBookmark */ = 638BB35512FE3A3F00114C10 /* PlistBookmark */;
+			638BB35612FE3A3F00114C10 /* PBXBookmark */ = 638BB35612FE3A3F00114C10 /* PBXBookmark */;
+			638BB35712FE3A3F00114C10 /* PBXBookmark */ = 638BB35712FE3A3F00114C10 /* PBXBookmark */;
+			63BCE54E12FE27EA0010829F = 63BCE54E12FE27EA0010829F /* PBXTextBookmark */;
+			63BCE54F12FE27EA0010829F = 63BCE54F12FE27EA0010829F /* PBXTextBookmark */;
+			63BCE55312FE27FF0010829F = 63BCE55312FE27FF0010829F /* PlistBookmark */;
+			63BCE55412FE27FF0010829F = 63BCE55412FE27FF0010829F /* PBXTextBookmark */;
+			63BCE55512FE27FF0010829F = 63BCE55512FE27FF0010829F /* PBXTextBookmark */;
+			63BCE55612FE27FF0010829F = 63BCE55612FE27FF0010829F /* PBXTextBookmark */;
+			63BCE55F12FE28F10010829F = 63BCE55F12FE28F10010829F /* PBXTextBookmark */;
+			63BCE56012FE28F10010829F = 63BCE56012FE28F10010829F /* PBXTextBookmark */;
+			63BCE56112FE28F10010829F = 63BCE56112FE28F10010829F /* PBXTextBookmark */;
+			63BCE56412FE29020010829F = 63BCE56412FE29020010829F /* PBXTextBookmark */;
+			63BCE56712FE29680010829F = 63BCE56712FE29680010829F /* PBXTextBookmark */;
+			63BCE56A12FE29800010829F = 63BCE56A12FE29800010829F /* PBXTextBookmark */;
+			63BCE56C12FE2B670010829F = 63BCE56C12FE2B670010829F /* PBXTextBookmark */;
+			63BCE56D12FE2B670010829F = 63BCE56D12FE2B670010829F /* PBXTextBookmark */;
+			63BCE56E12FE2B670010829F = 63BCE56E12FE2B670010829F /* PBXTextBookmark */;
+			63BCE57112FE2B900010829F = 63BCE57112FE2B900010829F /* PBXTextBookmark */;
+			63BCE57412FE2BA00010829F = 63BCE57412FE2BA00010829F /* PBXTextBookmark */;
+			63BCE57512FE2BA00010829F = 63BCE57512FE2BA00010829F /* PBXTextBookmark */;
+			63BCE57612FE2BA00010829F = 63BCE57612FE2BA00010829F /* PBXTextBookmark */;
+			63BCE57912FE2BEF0010829F = 63BCE57912FE2BEF0010829F /* PBXTextBookmark */;
+			63BCE58D12FE2F130010829F = 63BCE58D12FE2F130010829F /* PBXTextBookmark */;
+			63BCE58E12FE2F130010829F = 63BCE58E12FE2F130010829F /* PlistBookmark */;
+			63BCE58F12FE2F130010829F = 63BCE58F12FE2F130010829F /* PlistBookmark */;
 		};
 		sourceControlManager = 63069ECF12FC6335004A0F32 /* Source Control */;
 		userBuildSettings = {
@@ -107,6 +117,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = CastRoller;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -125,11 +137,52 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	63BCE54E12FE27EA0010829F /* XCBuildMessageTextBookmark */ = {
+	638BB34A12FE38C300114C10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CastRoller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	638BB34E12FE3A1F00114C10 /* Default.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = Default.png;
+		path = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/Resources/Images/Default.png";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+	638BB35512FE3A3F00114C10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CastRoller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	638BB35612FE3A3F00114C10 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 638BB34E12FE3A1F00114C10 /* Default.png */;
+	};
+	638BB35712FE3A3F00114C10 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 638BB34E12FE3A1F00114C10 /* Default.png */;
+	};
+	63BCE54E12FE27EA0010829F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		comments = "Type of property 'myWebView' does not match type of ivar 'myWebView'";
 		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
 		rLoc = 14;
 		rType = 1;
@@ -324,5 +377,38 @@
 		rType = 0;
 		vrLen = 645;
 		vrLoc = 655;
+	};
+	63BCE58D12FE2F130010829F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
+		name = "FirstViewController.m: 44";
+		rLen = 0;
+		rLoc = 1035;
+		rType = 0;
+		vrLen = 770;
+		vrLoc = 457;
+	};
+	63BCE58E12FE2F130010829F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CastRoller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	63BCE58F12FE2F130010829F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CastRoller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
 	};
 }
