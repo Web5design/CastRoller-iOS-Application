@@ -18,6 +18,7 @@
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
 		28D4B068107A5DE70093E739 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B067107A5DE70093E739 /* FirstView.xib */; };
 		630BF05312FE491400AAD40C /* Episode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630BF05212FE491400AAD40C /* Episode.xib */; };
+		630BF07D12FE4E7000AAD40C /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 630BF07C12FE4E7000AAD40C /* Logo.png */; };
 		638BB36212FE3B4A00114C10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 638BB36112FE3B4A00114C10 /* Default.png */; };
 		638BB3A912FE42FD00114C10 /* channel.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB39F12FE42FD00114C10 /* channel.html */; };
 		638BB3AA12FE42FD00114C10 /* common.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB3A012FE42FD00114C10 /* common.js */; };
@@ -54,6 +55,7 @@
 		28D4B067107A5DE70093E739 /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		630BF05212FE491400AAD40C /* Episode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Episode.xib; sourceTree = "<group>"; };
+		630BF07C12FE4E7000AAD40C /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		638BB36112FE3B4A00114C10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		638BB39F12FE42FD00114C10 /* channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = channel.html; sourceTree = "<group>"; };
 		638BB3A012FE42FD00114C10 /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		63BCE57A12FE2EAE0010829F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				630BF07C12FE4E7000AAD40C /* Logo.png */,
 				638BB36112FE3B4A00114C10 /* Default.png */,
 				63BCE57B12FE2EAE0010829F /* Icon-iPad.png */,
 				63BCE57C12FE2EAE0010829F /* Icon-Small-50.png */,
@@ -253,6 +256,7 @@
 				638BB3B112FE42FD00114C10 /* podcast.html in Resources */,
 				638BB3B212FE42FD00114C10 /* podcasts.html in Resources */,
 				630BF05312FE491400AAD40C /* Episode.xib in Resources */,
+				630BF07D12FE4E7000AAD40C /* Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
