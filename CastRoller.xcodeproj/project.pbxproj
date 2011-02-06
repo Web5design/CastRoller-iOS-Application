@@ -18,15 +18,16 @@
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
 		28D4B068107A5DE70093E739 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B067107A5DE70093E739 /* FirstView.xib */; };
 		638BB36212FE3B4A00114C10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 638BB36112FE3B4A00114C10 /* Default.png */; };
-		638BB37212FE3D6F00114C10 /* channel.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB36812FE3D6F00114C10 /* channel.html */; };
-		638BB37312FE3D6F00114C10 /* episode.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB36912FE3D6F00114C10 /* episode.html */; };
-		638BB37412FE3D6F00114C10 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB36A12FE3D6F00114C10 /* index.html */; };
-		638BB37512FE3D6F00114C10 /* common.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB36C12FE3D6F00114C10 /* common.js */; };
-		638BB37612FE3D6F00114C10 /* jquery.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB36D12FE3D6F00114C10 /* jquery.min.js */; };
-		638BB37712FE3D6F00114C10 /* jquery.tmpl.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB36E12FE3D6F00114C10 /* jquery.tmpl.min.js */; };
-		638BB37812FE3D6F00114C10 /* json2.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB36F12FE3D6F00114C10 /* json2.js */; };
-		638BB37912FE3D6F00114C10 /* podcast.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB37012FE3D6F00114C10 /* podcast.html */; };
-		638BB37A12FE3D6F00114C10 /* podcasts.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB37112FE3D6F00114C10 /* podcasts.html */; };
+		638BB3A912FE42FD00114C10 /* channel.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB39F12FE42FD00114C10 /* channel.html */; };
+		638BB3AA12FE42FD00114C10 /* common.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB3A012FE42FD00114C10 /* common.js */; };
+		638BB3AB12FE42FD00114C10 /* episode.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A112FE42FD00114C10 /* episode.html */; };
+		638BB3AC12FE42FD00114C10 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A212FE42FD00114C10 /* index.html */; };
+		638BB3AD12FE42FD00114C10 /* jquery.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB3A312FE42FD00114C10 /* jquery.min.js */; };
+		638BB3AE12FE42FD00114C10 /* jquery.tmpl.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB3A412FE42FD00114C10 /* jquery.tmpl.min.js */; };
+		638BB3AF12FE42FD00114C10 /* json2.js in Sources */ = {isa = PBXBuildFile; fileRef = 638BB3A512FE42FD00114C10 /* json2.js */; };
+		638BB3B012FE42FD00114C10 /* loadscreen-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A612FE42FD00114C10 /* loadscreen-iphone.png */; };
+		638BB3B112FE42FD00114C10 /* podcast.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A712FE42FD00114C10 /* podcast.html */; };
+		638BB3B212FE42FD00114C10 /* podcasts.html in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A812FE42FD00114C10 /* podcasts.html */; };
 		63BCE58112FE2EAE0010829F /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BCE57B12FE2EAE0010829F /* Icon-iPad.png */; };
 		63BCE58212FE2EAE0010829F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BCE57C12FE2EAE0010829F /* Icon-Small-50.png */; };
 		63BCE58312FE2EAE0010829F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BCE57D12FE2EAE0010829F /* Icon-Small.png */; };
@@ -52,15 +53,16 @@
 		28D4B067107A5DE70093E739 /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		638BB36112FE3B4A00114C10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		638BB36812FE3D6F00114C10 /* channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = channel.html; sourceTree = "<group>"; };
-		638BB36912FE3D6F00114C10 /* episode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = episode.html; sourceTree = "<group>"; };
-		638BB36A12FE3D6F00114C10 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		638BB36C12FE3D6F00114C10 /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
-		638BB36D12FE3D6F00114C10 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
-		638BB36E12FE3D6F00114C10 /* jquery.tmpl.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.tmpl.min.js; sourceTree = "<group>"; };
-		638BB36F12FE3D6F00114C10 /* json2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = json2.js; sourceTree = "<group>"; };
-		638BB37012FE3D6F00114C10 /* podcast.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = podcast.html; sourceTree = "<group>"; };
-		638BB37112FE3D6F00114C10 /* podcasts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = podcasts.html; sourceTree = "<group>"; };
+		638BB39F12FE42FD00114C10 /* channel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = channel.html; sourceTree = "<group>"; };
+		638BB3A012FE42FD00114C10 /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
+		638BB3A112FE42FD00114C10 /* episode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = episode.html; sourceTree = "<group>"; };
+		638BB3A212FE42FD00114C10 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		638BB3A312FE42FD00114C10 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		638BB3A412FE42FD00114C10 /* jquery.tmpl.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.tmpl.min.js; sourceTree = "<group>"; };
+		638BB3A512FE42FD00114C10 /* json2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = json2.js; sourceTree = "<group>"; };
+		638BB3A612FE42FD00114C10 /* loadscreen-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadscreen-iphone.png"; sourceTree = "<group>"; };
+		638BB3A712FE42FD00114C10 /* podcast.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = podcast.html; sourceTree = "<group>"; };
+		638BB3A812FE42FD00114C10 /* podcasts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = podcasts.html; sourceTree = "<group>"; };
 		63BCE57B12FE2EAE0010829F /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		63BCE57C12FE2EAE0010829F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		63BCE57D12FE2EAE0010829F /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				638BB36712FE3D6F00114C10 /* Html */,
+				638BB39E12FE42FD00114C10 /* Html */,
 				63BCE57A12FE2EAE0010829F /* Images */,
 				28D4B067107A5DE70093E739 /* FirstView.xib */,
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
@@ -149,29 +151,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		638BB36712FE3D6F00114C10 /* Html */ = {
+		638BB39E12FE42FD00114C10 /* Html */ = {
 			isa = PBXGroup;
 			children = (
-				638BB36812FE3D6F00114C10 /* channel.html */,
-				638BB36912FE3D6F00114C10 /* episode.html */,
-				638BB36A12FE3D6F00114C10 /* index.html */,
-				638BB36B12FE3D6F00114C10 /* js */,
-				638BB37012FE3D6F00114C10 /* podcast.html */,
-				638BB37112FE3D6F00114C10 /* podcasts.html */,
+				638BB39F12FE42FD00114C10 /* channel.html */,
+				638BB3A012FE42FD00114C10 /* common.js */,
+				638BB3A112FE42FD00114C10 /* episode.html */,
+				638BB3A212FE42FD00114C10 /* index.html */,
+				638BB3A312FE42FD00114C10 /* jquery.min.js */,
+				638BB3A412FE42FD00114C10 /* jquery.tmpl.min.js */,
+				638BB3A512FE42FD00114C10 /* json2.js */,
+				638BB3A612FE42FD00114C10 /* loadscreen-iphone.png */,
+				638BB3A712FE42FD00114C10 /* podcast.html */,
+				638BB3A812FE42FD00114C10 /* podcasts.html */,
 			);
 			name = Html;
-			path = ../html;
-			sourceTree = SOURCE_ROOT;
-		};
-		638BB36B12FE3D6F00114C10 /* js */ = {
-			isa = PBXGroup;
-			children = (
-				638BB36C12FE3D6F00114C10 /* common.js */,
-				638BB36D12FE3D6F00114C10 /* jquery.min.js */,
-				638BB36E12FE3D6F00114C10 /* jquery.tmpl.min.js */,
-				638BB36F12FE3D6F00114C10 /* json2.js */,
-			);
-			path = js;
+			path = html;
 			sourceTree = "<group>";
 		};
 		63BCE57A12FE2EAE0010829F /* Images */ = {
@@ -248,11 +243,12 @@
 				63BCE58512FE2EAE0010829F /* Icon.png in Resources */,
 				63BCE58612FE2EAE0010829F /* Icon@2x.png in Resources */,
 				638BB36212FE3B4A00114C10 /* Default.png in Resources */,
-				638BB37212FE3D6F00114C10 /* channel.html in Resources */,
-				638BB37312FE3D6F00114C10 /* episode.html in Resources */,
-				638BB37412FE3D6F00114C10 /* index.html in Resources */,
-				638BB37912FE3D6F00114C10 /* podcast.html in Resources */,
-				638BB37A12FE3D6F00114C10 /* podcasts.html in Resources */,
+				638BB3A912FE42FD00114C10 /* channel.html in Resources */,
+				638BB3AB12FE42FD00114C10 /* episode.html in Resources */,
+				638BB3AC12FE42FD00114C10 /* index.html in Resources */,
+				638BB3B012FE42FD00114C10 /* loadscreen-iphone.png in Resources */,
+				638BB3B112FE42FD00114C10 /* podcast.html in Resources */,
+				638BB3B212FE42FD00114C10 /* podcasts.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +263,10 @@
 				1D3623260D0F684500981E51 /* CastRollerAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
 				284F764110B34E8A00D7BA5B /* SecondViewController.m in Sources */,
-				638BB37512FE3D6F00114C10 /* common.js in Sources */,
-				638BB37612FE3D6F00114C10 /* jquery.min.js in Sources */,
-				638BB37712FE3D6F00114C10 /* jquery.tmpl.min.js in Sources */,
-				638BB37812FE3D6F00114C10 /* json2.js in Sources */,
+				638BB3AA12FE42FD00114C10 /* common.js in Sources */,
+				638BB3AD12FE42FD00114C10 /* jquery.min.js in Sources */,
+				638BB3AE12FE42FD00114C10 /* jquery.tmpl.min.js in Sources */,
+				638BB3AF12FE42FD00114C10 /* json2.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

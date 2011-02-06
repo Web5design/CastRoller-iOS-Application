@@ -6,6 +6,8 @@
 //  Copyright 2011 CastRoller. All rights reserved.
 //
 
+#define BASEURL [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]
+
 #import "FirstViewController.h"
 
 
@@ -17,7 +19,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	NSString *urlString = [[NSString alloc] initWithFormat:@"http://dev.castroller.com", nil];
+/*	NSString *urlString = [[NSString alloc] initWithFormat:@"http://dev.castroller.com", nil];
 	
 	
 
@@ -28,6 +30,15 @@
 	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 	
 	//Load the request in the UIWebView.
+	[myWebView loadRequest:requestObj];
+*/
+	
+	
+	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+	
+	NSURL *url = [NSURL fileURLWithPath:urlAddress];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	
 	[myWebView loadRequest:requestObj];
 	
     [super viewDidLoad];
