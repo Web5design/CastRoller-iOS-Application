@@ -65,6 +65,9 @@
 			638BB35512FE3A3F00114C10 /* PlistBookmark */ = 638BB35512FE3A3F00114C10 /* PlistBookmark */;
 			638BB35612FE3A3F00114C10 /* PBXBookmark */ = 638BB35612FE3A3F00114C10 /* PBXBookmark */;
 			638BB35712FE3A3F00114C10 /* PBXBookmark */ = 638BB35712FE3A3F00114C10 /* PBXBookmark */;
+			638BB37B12FE3D8300114C10 /* PlistBookmark */ = 638BB37B12FE3D8300114C10 /* PlistBookmark */;
+			638BB37C12FE3D8300114C10 /* PBXBookmark */ = 638BB37C12FE3D8300114C10 /* PBXBookmark */;
+			638BB37D12FE3D8300114C10 /* PBXBookmark */ = 638BB37D12FE3D8300114C10 /* PBXBookmark */;
 			63BCE54E12FE27EA0010829F = 63BCE54E12FE27EA0010829F /* PBXTextBookmark */;
 			63BCE54F12FE27EA0010829F = 63BCE54F12FE27EA0010829F /* PBXTextBookmark */;
 			63BCE55312FE27FF0010829F = 63BCE55312FE27FF0010829F /* PlistBookmark */;
@@ -178,6 +181,26 @@
 	638BB35712FE3A3F00114C10 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 638BB34E12FE3A1F00114C10 /* Default.png */;
+	};
+	638BB37B12FE3D8300114C10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CastRoller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	638BB37C12FE3D8300114C10 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 638BB36112FE3B4A00114C10 /* Default.png */;
+	};
+	638BB37D12FE3D8300114C10 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 638BB36112FE3B4A00114C10 /* Default.png */;
 	};
 	63BCE54E12FE27EA0010829F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
