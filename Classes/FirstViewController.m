@@ -33,13 +33,14 @@
 	[myWebView loadRequest:requestObj];
 */
 	
-	
+
 	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
 	
 	NSURL *url = [NSURL fileURLWithPath:urlAddress];
 	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 	
 	[myWebView loadRequest:requestObj];
+
 	
     [super viewDidLoad];
 }

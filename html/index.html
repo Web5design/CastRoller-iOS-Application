@@ -43,7 +43,7 @@ $("#episodeThumbsTemplate").tmpl(resized).appendTo(match);
 
 
 $(function(){
-alert("hello jquery");
+
 	var url = "http://api.castroller.com/v1.svc/Channels?$orderby=FeaturedLevel%20desc&$top=6&$format=json&$callback=?";
 
 	$.getJSON(url, null, function(data){
@@ -62,7 +62,7 @@ alert("hello jquery");
 </head>
 <body>
 <h1>CastRoller iOS Local</h1>
-<img src="loadscreen-iphone.png"/>
+
 <ul id="channels"/>
 </body>
 </html>

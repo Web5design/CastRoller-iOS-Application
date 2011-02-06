@@ -266,14 +266,35 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>638BB39E12FE42FD00114C10</string>
+								<string>63BCE57A12FE2EAE0010829F</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>E2644B35053B69B200211256</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
+									<integer>12</integer>
+									<integer>10</integer>
+									<integer>9</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>15</integer>
+									<integer>10</integer>
+									<integer>9</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>16</integer>
+									<integer>10</integer>
+									<integer>9</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>17</integer>
+									<integer>10</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -297,7 +318,7 @@
 							<real>241</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>188 136 1083 667 0 0 1440 878 </string>
+						<string>100 189 1083 667 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -308,14 +329,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FirstViewController.m</string>
+								<string>common.js</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,20 +342,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FirstViewController.m</string>
+										<string>common.js</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>630BF07912FE4CCE00AAD40C</string>
+										<string>630BF09312FE51C700AAD40C</string>
 										<key>history</key>
 										<array>
 											<string>638BB37B12FE3D8300114C10</string>
 											<string>638BB3B912FE454500114C10</string>
 											<string>630BF06512FE4BBB00AAD40C</string>
-											<string>630BF07512FE4CCE00AAD40C</string>
 											<string>630BF07612FE4CCE00AAD40C</string>
 											<string>630BF07712FE4CCE00AAD40C</string>
-											<string>630BF07812FE4CCE00AAD40C</string>
+											<string>630BF09012FE51C700AAD40C</string>
+											<string>630BF09112FE51C700AAD40C</string>
+											<string>630BF09212FE51C700AAD40C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -350,7 +370,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {820, 414}}</string>
 								<key>RubberWindowFrame</key>
-								<string>188 136 1083 667 0 0 1440 878 </string>
+								<string>100 189 1083 667 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -358,6 +378,8 @@
 							<string>414pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -370,7 +392,7 @@
 								<key>Frame</key>
 								<string>{{0, 419}, {820, 207}}</string>
 								<key>RubberWindowFrame</key>
-								<string>188 136 1083 667 0 0 1440 878 </string>
+								<string>100 189 1083 667 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -534,6 +556,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>630BF09412FE51C700AAD40C</string>
 		<string>630BF06F12FE4BBB00AAD40C</string>
 		<string>630BF07012FE4BBB00AAD40C</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -542,7 +565,7 @@
 		<string>/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>188 136 1083 667 0 0 1440 878 </string>
+	<string>100 189 1083 667 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -580,6 +603,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
