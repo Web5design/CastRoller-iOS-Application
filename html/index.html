@@ -95,6 +95,7 @@ background-position:center right !important;
 </style>
 
 <script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery-ui.min.js" type="text/javascript"></script>
 <script src="jquery.tmpl.min.js" type="text/javascript"></script>
 <script src="jquery-textfill-0.1.js" type="text/javascript"></script>
 <script src="jquery.jswipe-0.1.2.js" type="text/javascript"></script>
@@ -148,12 +149,25 @@ $("#episodeThumbsTemplate").tmpl(resized).appendTo(match);
 			);
 }
 
-function displayFeatured(podcastId)
+function displayFeatured(podcastId, direction)
 {
-	$('#featured li').hide();
+	
 			$('#nobbies li').removeClass('active');
 			$("#nobbies li[podcastId='" + podcastId + "']").addClass("active");
+			
+			var dir;
+			if( direction == 1)
+			{
+				dir = "left";
+			}else{
+				dir = "right";
+			}
+			
+			
+			$('#featured li').hide();
 			$("#featured li[podcastId='" + podcastId + "']").show();
+			
+			
 }
 
 function scrollFeatured(direction)
@@ -181,7 +195,7 @@ function scrollFeatured(direction)
 	
 	var podcastId = $(nobbies[next]).attr('podcastId');
 	
-	displayFeatured(podcastId);
+	displayFeatured(podcastId, direction);
 	
 	
 	
@@ -217,10 +231,10 @@ $(function(){
 		$('#nobbies li').click(function(){
 			var podcastId = $(this).attr('podcastId');
 			
-			displayFeatured(podcastId);
+			displayFeatured(podcastId, 1);
 		});
 		
-		$('#featured').swipe({
+		$('#featured li .info').swipe({
 			swipeLeft: function(){scrollFeatured(-1);},
 			swipeRight: function(){scrollFeatured(1);}
 			});
