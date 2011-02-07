@@ -50,23 +50,35 @@ background-position:center right !important;
 	}
 	
 
-	#channels ul{
+	#channels, #channels ul{
 		list-style: none;
-		height: 90px;
-		width: 100%;
-		overflow-x: scroll;
-		overflow-y: hidden;
+		
 		
 	}
 	
-	#channels ul li{
+	#channels .holder{
+		height: 90px;
+		width: 824px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	#channels .holder ul{
+		width: 3000px;
+		height: 90px;
+	}
+	
+	#channels ul li, #channels ul ul{
 		float: left;
+		margin: 0;
+		padding: 0;
 	
 	}
 	
 	#channels a.channelImage{
 		width: 180px;
 		height: 90px;
+		float: left;
 	}
 	
 
@@ -114,8 +126,11 @@ background-position:center right !important;
 		<script id="channelsTemplate" type="text/x-jquery-tmpl">
 		<li>
 			<a href="channel.html?cid=${Id}" class="channelImage"><img src='${ImageUrl}' alt='${Name}'/></a>
+			<div class="holder">
 			<ul channel="${Id}">
+			
 			</ul>
+			</div>
 			<br class="clear"/>
 		</li>
 	</script>
@@ -123,9 +138,9 @@ background-position:center right !important;
 	<script id="episodeThumbsTemplate" type="text/x-jquery-tmpl">
       	<li>
              	<a href='episode.html?eid=${Id}'>
-                 	<img src="${LinkUrl}" alt="${Name}"/>
-                 	<h2>${Name}</h2>      
+                 	<img src="${LinkUrl}" alt="${Name}"/>     
            	</a>
+			
           </li>
 	</script>
 	
