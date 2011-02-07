@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63F01F4D12FF03C40086A083</string>
+										<string>63F01F6612FF0CC30086A083</string>
 										<key>history</key>
 										<array>
 											<string>638BB37B12FE3D8300114C10</string>
@@ -341,7 +341,7 @@
 											<string>63F01F4912FF03C40086A083</string>
 											<string>63F01F4A12FF03C40086A083</string>
 											<string>63F01F4B12FF03C40086A083</string>
-											<string>63F01F4C12FF03C40086A083</string>
+											<string>63F01F4D12FF03C40086A083</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,14 +353,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {820, 407}}</string>
+								<string>{{0, 0}, {820, 400}}</string>
 								<key>RubberWindowFrame</key>
 								<string>100 189 1083 667 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>407pt</string>
+							<string>400pt</string>
 						</dict>
 						<dict>
 							<key>BecomeActive</key>
@@ -375,14 +375,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 412}, {820, 214}}</string>
+								<string>{{0, 405}, {820, 221}}</string>
 								<key>RubberWindowFrame</key>
 								<string>100 189 1083 667 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>214pt</string>
+							<string>221pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -401,9 +401,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>63F01F2D12FEDC540086A083</string>
+				<string>63F01F6712FF0CC30086A083</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>63F01F2E12FEDC540086A083</string>
+				<string>63F01F6812FF0CC30086A083</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -541,10 +541,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63F01F4E12FF03C40086A083</string>
-		<string>63F01F3812FEDC540086A083</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>63BCE50812FE24CD0010829F</string>
 		<string>/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller.xcodeproj</string>
 	</array>
@@ -626,7 +622,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>63BCE50812FE24CD0010829F</string>
-				<string>63F01F2F12FEDC540086A083</string>
+				<string>63F01F6912FF0CC30086A083</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
