@@ -20,7 +20,8 @@
 	body{
 		background: black;
 		color: white;
-		font-family: 'Gotham-Light';
+		font-family: sans-serif,'Gotham-Light';
+		margin:0; padding:0;
 	}
 	
 	h1, h2, h3{
@@ -31,11 +32,16 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
+		margin-top:-30px;
+		position:relative; z-index:100;
+		text-align:center;
+		width:390px;
 		}
 	#nobbies li{
 		background: url(nobbies.png) 0px -15px no-repeat;
 		width: 15px;
 		height: 15px;
+display:inline-block;
 		}
 	
 	#nobbies li.active{
@@ -44,11 +50,51 @@
 		height: 15px;
 		}
 	
+	#featured {
+		list-style:none;
+		margin:0; padding:0;
+	}
+	
+
+	
 	#featured li{
 		display: none;
-		height: 320px;
+		height: 300px; 
 		overflow: hidden;
+		padding:0; margin:0;
+background-position:center right !important; 
 	}
+	
+	#featured div {
+		background:rgba(0,0,0,0.9);
+		width:325px;
+		height:300px;
+		margin:0; padding:55px 35px 0px 40px;
+	}
+	
+	#featured div small{
+	
+		font-family: 'Gotham-Medium';
+		margin:0; padding:0;
+		font-size:1.05em;
+		color:rgba(256,256,256,0.5);
+	}	
+	
+	#featured div h1 {
+		margin:10px 0 10px 0; padding:0;
+		font-size:2em;
+		line-height:1em;
+		max-height:75px;
+		overflow:hidden;
+	}
+	
+	#featured div p {
+		margin:0; padding:0px;
+		max-height:98px;
+		font-size:0.8em;
+		overflow:hidden;
+		color:rgba(256,256,256,0.9);
+	}	
 </style>
 
 <script src="jquery.min.js" type="text/javascript"></script>
@@ -57,10 +103,10 @@
 	<script id="featuredTemplate" type="text/x-jquery-tmpl">
 		<li style='background: url(${ImageUrl})'  podcastId='${Id}'>
 			<div>
-				<h2>Featured</h2>
+				<small>Featured Show</small>
 				<h1>${Name}</h1>
 				<p>${Description}</p>
-				<p>Button</p>
+
 			</div>
 		</li>
 	</script>
@@ -141,7 +187,7 @@ $(function(){
 </script>
 </head>
 <body>
-John's edit
+
 <ul id="featured"></ul>
 <ul id="nobbies">
 </ul>
