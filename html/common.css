@@ -1,0 +1,32 @@
+@font-face{
+		font-family: 'Gotham-Light';
+		src: url(Gotham-Light.otf) format("opentype");
+	}
+	
+		@font-face{
+		font-family: 'Gotham-Bold';
+		src: url(Gotham-Bold.otf) format("opentype");
+	}
+	
+	@font-face{
+		font-family: 'Gotham-Medium';
+		src: url(Gotham-Medium.otf) format("opentype");
+	}
+	
+	body{
+		background: black;
+		color: white;
+		font-family: sans-serif;
+		margin:0; padding:0;
+	}
+	
+	h1, h2, h3{
+		font-family: 'Gotham-Medium';
+		}
+		
+	
+		
+.clear{
+	clear:both;
+	display: block;
+	}

@@ -42,6 +42,8 @@
 		63F01F8C130087DE0086A083 /* nobbies.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F01F8B130087DE0086A083 /* nobbies.png */; };
 		63F01FA1130095950086A083 /* ipad-logo-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F01FA0130095950086A083 /* ipad-logo-header.png */; };
 		63F01FB213009B060086A083 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = 63F01FB113009B060086A083 /* common.css */; };
+		63F01FCE1300A3650086A083 /* jquery-textfill-0.1.js in Resources */ = {isa = PBXBuildFile; fileRef = 63F01FCC1300A3350086A083 /* jquery-textfill-0.1.js */; };
+		63F01FF91300AA3D0086A083 /* jquery.jswipe-0.1.2.js in Resources */ = {isa = PBXBuildFile; fileRef = 63F01FEA1300A8CC0086A083 /* jquery.jswipe-0.1.2.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		63F01F8B130087DE0086A083 /* nobbies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nobbies.png; sourceTree = "<group>"; };
 		63F01FA0130095950086A083 /* ipad-logo-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-logo-header.png"; sourceTree = "<group>"; };
 		63F01FB113009B060086A083 /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
+		63F01FCC1300A3350086A083 /* jquery-textfill-0.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-textfill-0.1.js"; sourceTree = "<group>"; };
+		63F01FEA1300A8CC0086A083 /* jquery.jswipe-0.1.2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.jswipe-0.1.2.js"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CastRoller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CastRoller-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +175,8 @@
 		638BB39E12FE42FD00114C10 /* Html */ = {
 			isa = PBXGroup;
 			children = (
+				63F01FEA1300A8CC0086A083 /* jquery.jswipe-0.1.2.js */,
+				63F01FCC1300A3350086A083 /* jquery-textfill-0.1.js */,
 				63F01F8B130087DE0086A083 /* nobbies.png */,
 				63F01F751300840F0086A083 /* Gotham-Medium.otf */,
 				63F01F71130082830086A083 /* Gotham-Bold.otf */,
@@ -257,6 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F01FCE1300A3650086A083 /* jquery-textfill-0.1.js in Resources */,
+				63F01FF91300AA3D0086A083 /* jquery.jswipe-0.1.2.js in Resources */,
 				630BF09512FE51E000AAD40C /* common.js in Resources */,
 				630BF09612FE51E000AAD40C /* jquery.min.js in Resources */,
 				630BF09712FE51E000AAD40C /* jquery.tmpl.min.js in Resources */,

@@ -42,7 +42,7 @@ display:inline-block;
 background-position:center right !important; 
 	}
 	
-	#featured div {
+	#featured div.info {
 		background:rgba(0,0,0,0.9);
 		width:325px;
 		height:300px;
@@ -78,12 +78,10 @@ background-position:center right !important;
 		color:rgba(256,256,256,0.5);
 	}	
 	
-	#featured div h1 {
-		margin:10px 0 10px 0; padding:0;
-		font-size:2em;
-		line-height:1em;
+	#featured h1 {
+	margin:10px 0 10px 0; padding:0;
+		line-height:1em; 
 		max-height:75px;
-		overflow:hidden;
 	}
 	
 	#featured div p {
@@ -98,10 +96,12 @@ background-position:center right !important;
 
 <script src="jquery.min.js" type="text/javascript"></script>
 <script src="jquery.tmpl.min.js" type="text/javascript"></script>
+<script src="jquery-textfill-0.1.js" type="text/javascript"></script>
+<script src="jquery.jswipe-0.1.2.js" type="text/javascript"></script>
 <script src="common.js" type="text/javascript"></script>
 	<script id="featuredTemplate" type="text/x-jquery-tmpl">
 		<li style='background: url(${ImageUrl})'  podcastId='${Id}'>
-			<div>
+			<div class="info">
 				<small>Featured Show</small>
 				<h1>${Name}</h1>
 				<p>${Description}</p>
@@ -148,6 +148,45 @@ $("#episodeThumbsTemplate").tmpl(resized).appendTo(match);
 			);
 }
 
+function displayFeatured(podcastId)
+{
+	$('#featured li').hide();
+			$('#nobbies li').removeClass('active');
+			$("#nobbies li[podcastId='" + podcastId + "']").addClass("active");
+			$("#featured li[podcastId='" + podcastId + "']").show();
+}
+
+function scrollFeatured(direction)
+{
+	var nobbies = $('#nobbies li');
+	
+	var index = 0;
+	var i =0;
+	$(nobbies).each(function(){
+		
+		if( $(this).hasClass('active') )
+		{
+			index = i;
+		}
+		i++;
+	});
+	
+	var next = (index+direction) % i;
+	
+	if( next < 0 )
+	{
+		next = i-1;
+	}
+	
+	
+	var podcastId = $(nobbies[next]).attr('podcastId');
+	
+	displayFeatured(podcastId);
+	
+	
+	
+}
+
 
 $(function(){
 
@@ -178,11 +217,15 @@ $(function(){
 		$('#nobbies li').click(function(){
 			var podcastId = $(this).attr('podcastId');
 			
-			$('#featured li').hide();
-			$('#nobbies li').removeClass('active');
-			$(this).addClass("active");
-			$("#featured li[podcastId='" + podcastId + "']").show();
+			displayFeatured(podcastId);
 		});
+		
+		$('#featured').swipe({
+			swipeLeft: function(){scrollFeatured(-1);},
+			swipeRight: function(){scrollFeatured(1);}
+			});
+		
+		
 	
 	});
 	
