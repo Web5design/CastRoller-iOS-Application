@@ -17,21 +17,18 @@
 @synthesize myWebView;
 @synthesize channelsWebView;
 
+
+- (void)openBottomPage:(NSString*)url{
+	NSURL *channelsUrl = [NSURL fileURLWithPath:url];
+	NSURLRequest *channelsRequestObj = [NSURLRequest requestWithURL:channelsUrl];
+	
+	[channelsWebView loadRequest:channelsRequestObj];
+	
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-/*	NSString *urlString = [[NSString alloc] initWithFormat:@"http://dev.castroller.com", nil];
-	
-	
 
-	//Create a URL object.
-	NSURL *url = [NSURL URLWithString:urlString];
-	
-	//URL Requst Object
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-	
-	//Load the request in the UIWebView.
-	[myWebView loadRequest:requestObj];
-*/
 	
 
 	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index_podcasts" ofType:@"html"];
@@ -42,20 +39,9 @@
 	[myWebView loadRequest:requestObj];
 
 	NSString *channelsUrlAddress = [[NSBundle mainBundle] pathForResource:@"index_channels" ofType:@"html"];
-	
-	NSURL *channelsUrl = [NSURL fileURLWithPath:channelsUrlAddress];
-	NSURLRequest *channelsRequestObj = [NSURLRequest requestWithURL:channelsUrl];
-	
-	[channelsWebView loadRequest:channelsRequestObj];
-	/*
-	[urlAddress release];
-	[url release];
-	[requestObj release];
 
-	[channelsUrlAddress release];
-	[channelsUrl release];
-	[channelsRequestObj release];
-	*/
+	[self openBottomPage: channelsUrlAddress];
+	
 	
     [super viewDidLoad];
 }
@@ -84,5 +70,28 @@
 	[channelsWebView dealloc];
     [super dealloc];
 }
+
+
+
+- (IBAction)featuredButtonPressed:(id)sender {
+	UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
+	switch ([segmentedControl selectedSegmentIndex]) {
+		case 0:
+			[self openBottomPage:[[NSBundle mainBundle] pathForResource:@"index_channels" ofType:@"html"] ];
+			break;
+		case 1:
+			[self openBottomPage:[[NSBundle mainBundle] pathForResource:@"index_new" ofType:@"html"] ];
+			break;
+		case 2:
+			[self openBottomPage:[[NSBundle mainBundle] pathForResource:@"index_popular" ofType:@"html"] ];
+			break;
+		default:
+			break;
+	}
+	
+}
+
+
+
 
 @end

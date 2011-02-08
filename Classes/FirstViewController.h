@@ -13,10 +13,17 @@
 	UIWebView *myWebView;
 	UIWebView *channelsWebView;
 	
+	
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *myWebView;
 @property (nonatomic, retain) IBOutlet UIWebView *channelsWebView;
+- (IBAction)featuredButtonPressed:(id)sender;
+
+
+
+- (void)openBottomPage:(NSString*) url;
 
 
 @end
