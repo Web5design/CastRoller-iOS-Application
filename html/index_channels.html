@@ -16,14 +16,17 @@
 	
 	#channels .holder{
 		height: 90px;
-		width: 824px;
-		overflow-x: scroll;
+		width: 840px;
+	/*	overflow-x: scroll;
 		overflow-y: hidden;
+		*/
+		overflow: auto;
 	}
 	
 	#channels .holder ul{
-		width: 3000px;
+	
 		height: 90px;
+		
 	}
 	
 	#channels ul li, #channels ul ul{
@@ -37,6 +40,7 @@
 		width: 180px;
 		height: 90px;
 		float: left;
+		margin-right:4px;
 	}
 	
 
@@ -55,8 +59,8 @@
 		<script id="channelsTemplate" type="text/x-jquery-tmpl">
 		<li>
 			<a href="channel.html?cid=${Id}" class="channelImage"><img src='${ImageUrl}' alt='${Name}'/></a>
-			<div class="holder">
-			<ul channel="${Id}">
+			<div class="holder" id="holder${Id}">
+			<ul id="channel${Id}" channel="${Id}">
 			
 			</ul>
 			</div>
@@ -85,10 +89,19 @@ function displayChannel(channelId)
 			{
 var resized = resizeImages(data.d,160,90);
 
-var match = $('ul[channel="' + channelId + '"]');
+var id = "channel" + channelId;
+
+
+var match = $('#' + id);
+
+
 
 $("#episodeThumbsTemplate").tmpl(resized).appendTo(match);
+				touchScroll("holder" + channelId);
 				
+				$(match).css('width', $('#' + id +" li").length * 160 );
+				
+
 			}
 			);
 }
