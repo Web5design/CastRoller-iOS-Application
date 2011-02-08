@@ -15,7 +15,7 @@
 
 
 @synthesize myWebView;
-
+@synthesize channelsWebView;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -34,13 +34,28 @@
 */
 	
 
-	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index_podcasts" ofType:@"html"];
 	
 	NSURL *url = [NSURL fileURLWithPath:urlAddress];
 	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 	
 	[myWebView loadRequest:requestObj];
 
+	NSString *channelsUrlAddress = [[NSBundle mainBundle] pathForResource:@"index_channels" ofType:@"html"];
+	
+	NSURL *channelsUrl = [NSURL fileURLWithPath:channelsUrlAddress];
+	NSURLRequest *channelsRequestObj = [NSURLRequest requestWithURL:channelsUrl];
+	
+	[channelsWebView loadRequest:channelsRequestObj];
+	/*
+	[urlAddress release];
+	[url release];
+	[requestObj release];
+
+	[channelsUrlAddress release];
+	[channelsUrl release];
+	[channelsRequestObj release];
+	*/
 	
     [super viewDidLoad];
 }
@@ -66,6 +81,7 @@
 
 - (void)dealloc {
 	[myWebView dealloc];
+	[channelsWebView dealloc];
     [super dealloc];
 }
 

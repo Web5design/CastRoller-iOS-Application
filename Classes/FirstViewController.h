@@ -11,10 +11,12 @@
 
 @interface FirstViewController : UIViewController {
 	UIWebView *myWebView;
+	UIWebView *channelsWebView;
 	
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *myWebView;
+@property (nonatomic, retain) IBOutlet UIWebView *channelsWebView;
 
 
 @end
