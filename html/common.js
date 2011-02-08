@@ -53,8 +53,12 @@ function touchScroll(id){
 													 },false);
 		
 		document.getElementById(id).addEventListener("touchmove", function(event) {
-													 this.scrollLeft=scrollStartPos-event.touches[0].pageX;
-													// event.preventDefault();
+													 var change = scrollStartPos-event.touches[0].pageX;
+													 this.scrollLeft=change;
+													 if( abs(change > 3 ) )
+													 {
+														//event.preventDefault();
+													 }
 													 },false);
 	}
 }
