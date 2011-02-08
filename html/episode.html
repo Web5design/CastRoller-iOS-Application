@@ -24,8 +24,8 @@
 	
 <script type="text/javascript">
                      
-	var playerWidth = 700;
-	var playerHeight = 395;	
+	var playerWidth = 724;
+	var playerHeight = 408;	
 
 	
 function getDateString(jsonDate) {
@@ -69,23 +69,17 @@ function displayEpisode(episodeId)
 			//$("#description").append( JSON.stringify(data.d.Podcast));
 			
 		              
-		$('#description').append(data.d.Description);
-		$('#episodeName').append( data.d.Name);
-		$('#podcastName').append(data.d.Podcast.Name);
+		$('#description').html(data.d.Description);
+		$('#episodeName').html( data.d.Name);
+		$('#podcastName').html(data.d.Podcast.Name);
 		
 		
-		$('#date').append(getDateString(data.d.PubDate));
+		$('#date').html(getDateString(data.d.PubDate));
 		displayPlayer(episodeId, data.d.Podcast.ImageUrl);
 	});
 }
 	
-function setPlayerImage(imageUrl)
-{                  
-	
-	var resized = resizeImage( imageUrl, playerWidth, playerHeight);
-	
-	$('#player').attr('poster', resized);
-}
+
 
 function displayPlayer(episodeId, podcastImageUrl)
 {
@@ -130,20 +124,24 @@ function displayPlayer(episodeId, podcastImageUrl)
 			fileUrl = audio.FileUrl;
 		}
 		
-		playerTag = "<" + playerType + " src='" + fileUrl + "' width=" + playerWidth + " height='" + playerHeight + "' id='player' controls='controls'/>";
-		
-		$('#playerArea').append(playerTag);
-		
-		
-		
-	
+		var imageUrl;
 		
 		if( image != null )
 		{
-			setPlayerImage(image.FileUrl);
+			imageUrl = image.FileUrl;
 		}else{
-			setPlayerImage(podcastImageUrl);
+			imageUrl = podcastImageUrl;
 		}
+		
+		var resized = resizeImage( imageUrl, playerWidth, playerHeight);
+	
+		
+		playerTag = "<" + playerType + " src='" + fileUrl + "' width=" + playerWidth + " height='" + playerHeight + "' id='player' controls='controls' poster='" + resized + "' preload='preload'/>";
+		
+		$('#playerArea').html(playerTag);
+		
+		
+		
 		
 	});
 }
