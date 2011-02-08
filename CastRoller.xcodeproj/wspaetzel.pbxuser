@@ -327,7 +327,7 @@
 	};
 	63851E471300DC0D007CAD41 /* index_popular.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 522}}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 519}}";
 			sepNavSelRange = "{0, 47}";
 			sepNavVisRange = "{0, 47}";
 		};
@@ -430,9 +430,9 @@
 	};
 	638BB3A012FE42FD00114C10 /* common.js */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 528}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 616}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 793}}";
+			sepNavSelRange = "{875, 423}";
+			sepNavVisRange = "{360, 944}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
@@ -514,9 +514,9 @@
 	};
 	63F01F6D13006A1A0086A083 /* index_podcasts.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 2834}}";
-			sepNavSelRange = "{229, 0}";
-			sepNavVisRange = "{139, 676}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 3263}}";
+			sepNavSelRange = "{3667, 0}";
+			sepNavVisRange = "{3314, 782}";
 			sepNavWindowFrame = "{{84, 252}, {750, 558}}";
 		};
 	};
@@ -562,10 +562,16 @@
 		vrLoc = 0;
 	};
 	63F01FEA1300A8CC0086A083 /* jquery.jswipe-0.1.2.js */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.javascript;
+		name = "jquery.jswipe-0.1.2.js";
+		path = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/html/jquery.jswipe-0.1.2.js";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1223, 1261}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{72, 1273}";
+			sepNavVisRange = "{72, 1171}";
 		};
 	};
 	63F01FFC1300ABEE0086A083 /* PBXTextBookmark */ = {
@@ -579,8 +585,14 @@
 		vrLoc = 72;
 	};
 	63F020131300B0160086A083 /* jqtouch.min.js */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.javascript;
+		name = jqtouch.min.js;
+		path = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/html/jqtouch.min.js";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {70257, 528}}";
+			sepNavIntBoundsRect = "{{0, 0}, {70257, 519}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 10035}";
 		};
@@ -607,9 +619,9 @@
 	};
 	63F020511300C0B60086A083 /* index_channels.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 1872}}";
-			sepNavSelRange = "{203, 0}";
-			sepNavVisRange = "{44, 500}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 1965}}";
+			sepNavSelRange = "{2049, 0}";
+			sepNavVisRange = "{1294, 772}";
 			sepNavWindowFrame = "{{107, 231}, {750, 558}}";
 		};
 	};
@@ -628,9 +640,9 @@
 		fRef = 63F020511300C0B60086A083 /* index_channels.html */;
 		name = "index_channels.html: 115";
 		rLen = 0;
-		rLoc = 942;
+		rLoc = 975;
 		rType = 0;
-		vrLen = 1196;
+		vrLen = 852;
 		vrLoc = 1615;
 	};
 	63F0206B1300C1F30086A083 /* PBXTextBookmark */ = {
@@ -638,9 +650,9 @@
 		fRef = 63F01F6D13006A1A0086A083 /* index_podcasts.html */;
 		name = "index_podcasts.html: 219";
 		rLen = 0;
-		rLoc = 3350;
+		rLoc = 3352;
 		rType = 0;
-		vrLen = 545;
+		vrLen = 140;
 		vrLoc = 3429;
 	};
 	63F0206C1300C1F30086A083 /* PBXTextBookmark */ = {
