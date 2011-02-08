@@ -29,6 +29,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 
+	// Hide the navigation bar
+	self.navigationController.navigationBarHidden = YES;
 	
 
 	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index_podcasts" ofType:@"html"];

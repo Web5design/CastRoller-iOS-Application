@@ -23,7 +23,8 @@
 	
 	
 <script type="text/javascript">
-                     
+          
+	var lastEpisodeId;           
 	var playerWidth = 724;
 	var playerHeight = 408;	
 
@@ -40,27 +41,14 @@ function getDateString(jsonDate) {
      return date.addMinutes(minutesOffset).toString("M/d/yyyy h:mm tt");
  }
  
-function displayEpisodes(podcastId)
-{
-	var url = "http://api.castroller.com/v1.svc/GetPodcastEpisodeImages?podcastId=" + podcastId + "&$format=json&$callback=?";
-	
-	
-	$.getJSON(url, null, function(data)
-		{
-			
-		var resized = resizeImages(data.d,160,90);
-		
-		$("#episodeThumbsTemplate").tmpl(resized).appendTo("#episodes");
-		
-		
-		}
-	);
-}
+
 
        
 function displayEpisode(episodeId)
 {
-
+	if( lastEpisodeId != episodeId )
+	{
+	 
 
 	var url = "http://api.castroller.com/v1.svc/Episodes(" + episodeId + "L)?$expand=Podcast&$format=json&$callback=?";
 	
@@ -77,6 +65,10 @@ function displayEpisode(episodeId)
 		$('#date').html(getDateString(data.d.PubDate));
 		displayPlayer(episodeId, data.d.Podcast.ImageUrl);
 	});
+	
+	lastEpisodeId = episodeId;
+	}
+
 }
 	
 

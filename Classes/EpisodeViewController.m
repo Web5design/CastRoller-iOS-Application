@@ -30,18 +30,32 @@
 	[episodeWebView stringByEvaluatingJavaScriptFromString:scriptString];
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+	if( needDisplayEpisode )
+	{
+		[self displayEpisode];
+	}
+}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	needDisplayEpisode = YES;
+	
+	episodeWebView.delegate = self;
+	
+	//Show nav bar
+	self.navigationController.navigationBarHidden = NO;
+	
 	
 	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"episode" ofType:@"html"];
 	
 	NSURL *url = [NSURL fileURLWithPath:urlAddress];
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url ];
 	
 	[episodeWebView loadRequest:requestObj];
 	
-	[self displayEpisode];
+	//[self displayEpisode];
 	
     [super viewDidLoad];
 }

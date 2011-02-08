@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface EpisodeViewController : UIViewController {
+@interface EpisodeViewController : UIViewController <UIWebViewDelegate> {
 	IBOutlet UIWebView *episodeWebView;
 	NSInteger episodeId;
+	Boolean needDisplayEpisode;
 }
 
 - (void)displayEpisode;

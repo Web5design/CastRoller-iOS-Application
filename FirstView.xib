@@ -214,10 +214,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1068229679"/>
-							<reference ref="313676896"/>
 							<reference ref="986310546"/>
 							<reference ref="875484014"/>
 							<reference ref="300627376"/>
+							<reference ref="313676896"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -232,11 +232,6 @@
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">26</int>
-						<reference key="object" ref="313676896"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
 						<reference key="object" ref="875484014"/>
 						<reference key="parent" ref="766721923"/>
@@ -244,6 +239,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">28</int>
 						<reference key="object" ref="300627376"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">26</int>
+						<reference key="object" ref="313676896"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</object>
@@ -274,7 +274,7 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw64AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw6UAAA</bytes>
 					</object>
 					<string>{{360, 90}, {1039, 766}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -291,7 +291,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDuwAAw7SAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDuwAAw7gAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
