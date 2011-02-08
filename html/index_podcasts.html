@@ -72,7 +72,7 @@ background-position:center right !important;
 		overflow:hidden;
 		color:rgba(256,256,256,0.9);
 	}	
-
+	
 </style>
 
 <script src="jquery.min.js" type="text/javascript"></script>
@@ -81,13 +81,18 @@ background-position:center right !important;
 <script src="jquery-textfill-0.1.js" type="text/javascript"></script>
 <script src="common.js" type="text/javascript"></script>
 	<script id="featuredTemplate" type="text/x-jquery-tmpl">
+		
 		<li style='background: url(${ImageUrl}) no-repeat'  podcastId='${Id}'>
+			
 			<div class="info">
+		
 				<small>Featured Show</small>
 				<h1>${Name}</h1>
 				<p>${Description}</p>
-
+				
 			</div>
+			
+
 		</li>
 	</script>
 	
@@ -191,7 +196,7 @@ $(function(){
 		var id ="featured";
 	document.getElementById(id).addEventListener("touchstart", function(event) {
 													 scrollStartPos=event.touches[0].pageX;
-													 event.preventDefault();
+													// event.preventDefault();
 													 },false);
 		
 		
@@ -209,6 +214,13 @@ $(function(){
 		document.getElementById(id).addEventListener("touchend", function(event) {
 			scrollFeatured(dir);
 													 },false);
+													 
+		$('#featured li').click(function(){
+			var podcastId = $(this).attr("podcastId");
+		
+			window.location = "podcast.html?pid=" + podcastId;
+			
+		});
 		
 	
 	});
