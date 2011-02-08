@@ -10,7 +10,14 @@
 
 
 @interface EpisodeViewController : UIViewController {
-
+	IBOutlet UIWebView *episodeWebView;
+	NSInteger episodeId;
 }
+
+- (void)displayEpisode;
+
+@property (nonatomic, retain) IBOutlet UIWebView *episodeWebView;
+@property (assign) NSInteger episodeId;
+
 
 @end

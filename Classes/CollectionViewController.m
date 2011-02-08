@@ -27,6 +27,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	self.title = @"Collection";
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [super viewDidLoad];
 }
 
@@ -48,6 +49,7 @@
 
 - (IBAction)viewEpisodePressed:(id)sender{
 	EpisodeViewController *controller = [[EpisodeViewController alloc] initWithNibName:@"EpisodeView" bundle:nil];
+	controller.episodeId = 1208797;
 	
 	[self.navigationController pushViewController:controller animated:YES];
 }

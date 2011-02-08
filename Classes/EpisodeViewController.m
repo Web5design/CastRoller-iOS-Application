@@ -10,6 +10,8 @@
 
 
 @implementation EpisodeViewController
+@synthesize episodeId;
+@synthesize episodeWebView;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -22,12 +24,33 @@
 }
 */
 
-/*
+- (void)displayEpisode
+{
+	NSString *scriptString = [[NSString alloc] initWithFormat:@"displayEpisode( %d )", episodeId ];
+	[episodeWebView stringByEvaluatingJavaScriptFromString:scriptString];
+}
+
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
+	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"episode" ofType:@"html"];
+	
+	NSURL *url = [NSURL fileURLWithPath:urlAddress];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	
+	[episodeWebView loadRequest:requestObj];
+	
+	[self displayEpisode];
+	
     [super viewDidLoad];
 }
-*/
+
+
+- (void)viewWillAppear:(BOOL)animated{
+
+	[self displayEpisode];
+}
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

@@ -23,7 +23,7 @@
 	};
 	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 536}}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
 			sepNavSelRange = "{415, 45}";
 			sepNavVisRange = "{0, 511}";
 			sepNavWindowFrame = "{{84, 252}, {750, 558}}";
@@ -31,9 +31,9 @@
 	};
 	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 1274}}";
-			sepNavSelRange = "{1736, 47}";
-			sepNavVisRange = "{1307, 982}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 1261}}";
+			sepNavSelRange = "{698, 250}";
+			sepNavVisRange = "{295, 835}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
@@ -79,6 +79,8 @@
 		activeTarget = 1D6058900D05DD3D006BFB54 /* CastRoller */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* CastRoller */,
+		);
+		breakpoints = (
 		);
 		codeSenseManager = 63069ED012FC6335004A0F32 /* Code sense */;
 		executables = (
@@ -177,6 +179,8 @@
 			630BF09012FE51C700AAD40C = 630BF09012FE51C700AAD40C /* PBXTextBookmark */;
 			635B771A1301C0AB004B5717 = 635B771A1301C0AB004B5717 /* PBXTextBookmark */;
 			635B771B1301C0AB004B5717 = 635B771B1301C0AB004B5717 /* PBXTextBookmark */;
+			635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = 635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */;
+			635B77CB1301E8A6004B5717 /* PBXTextBookmark */ = 635B77CB1301E8A6004B5717 /* PBXTextBookmark */;
 			63851E4E1300DC7B007CAD41 = 63851E4E1300DC7B007CAD41 /* PBXTextBookmark */;
 			63851E511300DC7B007CAD41 = 63851E511300DC7B007CAD41 /* PBXBookmark */;
 			63851ECD1300FA0C007CAD41 = 63851ECD1300FA0C007CAD41 /* PBXTextBookmark */;
@@ -213,7 +217,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -235,6 +239,8 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	63069ECF12FC6335004A0F32 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -357,6 +363,39 @@
 		vrLen = 449;
 		vrLoc = 0;
 	};
+	635B777A1301D593004B5717 /* CollectionViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
+			sepNavSelRange = "{239, 42}";
+			sepNavVisRange = "{0, 288}";
+		};
+	};
+	635B777B1301D593004B5717 /* CollectionViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 923}}";
+			sepNavSelRange = "{1463, 0}";
+			sepNavVisRange = "{1071, 664}";
+		};
+	};
+	635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incomplete implementation of class 'EpisodeViewController'";
+		fRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 81;
+		rType = 1;
+	};
+	635B77CB1301E8A6004B5717 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */;
+		name = "EpisodeViewController.m: 82";
+		rLen = 0;
+		rLoc = 1914;
+		rType = 0;
+		vrLen = 191;
+		vrLoc = 1728;
+	};
 	63851E451300DBFD007CAD41 /* index_new.html */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {913, 522}}";
@@ -387,16 +426,16 @@
 	};
 	63851EC41300F6DB007CAD41 /* EpisodeViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 530}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 239}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
+			sepNavSelRange = "{301, 0}";
+			sepNavVisRange = "{0, 430}";
 		};
 	};
 	63851EC51300F6DB007CAD41 /* EpisodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 780}}";
-			sepNavSelRange = "{604, 0}";
-			sepNavVisRange = "{0, 1064}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1105}}";
+			sepNavSelRange = "{1914, 0}";
+			sepNavVisRange = "{1728, 191}";
 		};
 	};
 	63851ECD1300FA0C007CAD41 /* PBXTextBookmark */ = {
@@ -434,7 +473,7 @@
 		fRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */;
 		name = "EpisodeViewController.m: 20";
 		rLen = 0;
-		rLoc = 604;
+		rLoc = 655;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 549;
@@ -469,15 +508,15 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {913, 845}}";
 			sepNavSelRange = "{1036, 0}";
-			sepNavVisRange = "{378, 1030}";
+			sepNavVisRange = "{613, 795}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
 	638BB3A112FE42FD00114C10 /* episode.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 2067}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1008}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 1989}}";
+			sepNavSelRange = "{1009, 0}";
+			sepNavVisRange = "{1630, 662}";
 		};
 	};
 	638BB3A212FE42FD00114C10 /* channels_episodes.html */ = {
