@@ -49,12 +49,12 @@ function touchScroll(id){
 		
 		document.getElementById(id).addEventListener("touchstart", function(event) {
 													 scrollStartPos=this.scrollLeft+event.touches[0].pageX;
-													 event.preventDefault();
+													// event.preventDefault();
 													 },false);
 		
 		document.getElementById(id).addEventListener("touchmove", function(event) {
 													 this.scrollLeft=scrollStartPos-event.touches[0].pageX;
-													 event.preventDefault();
+													// event.preventDefault();
 													 },false);
 	}
 }
