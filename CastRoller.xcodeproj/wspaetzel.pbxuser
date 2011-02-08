@@ -451,9 +451,9 @@
 	};
 	63851EC51300F6DB007CAD41 /* EpisodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1157}}";
-			sepNavSelRange = "{1131, 0}";
-			sepNavVisRange = "{702, 819}";
+			sepNavIntBoundsRect = "{{0, 0}, {663, 1274}}";
+			sepNavSelRange = "{2163, 0}";
+			sepNavVisRange = "{1618, 359}";
 		};
 	};
 	63851ECD1300FA0C007CAD41 /* PBXTextBookmark */ = {
@@ -532,9 +532,9 @@
 	};
 	638BB3A112FE42FD00114C10 /* episode.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 2002}}";
-			sepNavSelRange = "{688, 0}";
-			sepNavVisRange = "{913, 715}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 1885}}";
+			sepNavSelRange = "{1168, 0}";
+			sepNavVisRange = "{1092, 666}";
 		};
 	};
 	638BB3A212FE42FD00114C10 /* channels_episodes.html */ = {

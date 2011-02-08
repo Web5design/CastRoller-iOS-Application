@@ -9,7 +9,7 @@
 #define BASEURL [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]
 
 #import "FirstViewController.h"
-
+#import "WebViewWatcher.h"
 
 @implementation FirstViewController
 
@@ -29,6 +29,15 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 
+	if( watcher == nil)
+	{
+	   watcher = [WebViewWatcher alloc];
+	}
+	
+	myWebView.delegate= watcher;
+	channelsWebView.delegate = watcher;
+	
+	
 	// Hide the navigation bar
 	self.navigationController.navigationBarHidden = YES;
 	
@@ -68,6 +77,7 @@
 
 
 - (void)dealloc {
+	[watcher dealloc];
 	[myWebView dealloc];
 	[channelsWebView dealloc];
     [super dealloc];

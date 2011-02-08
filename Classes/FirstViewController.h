@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WebViewWatcher.h"
 
 @interface FirstViewController : UIViewController {
 	UIWebView *myWebView;
 	UIWebView *channelsWebView;
-	
+	WebViewWatcher *watcher;
 	
 	
 }
