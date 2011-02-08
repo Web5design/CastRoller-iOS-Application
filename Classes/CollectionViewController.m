@@ -29,6 +29,7 @@
 	self.title = @"Collection";
 	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 	self.navigationController.toolbarHidden = YES;
+
     [super viewDidLoad];
 }
 
