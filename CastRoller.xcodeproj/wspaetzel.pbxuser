@@ -23,17 +23,17 @@
 	};
 	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
-			sepNavSelRange = "{415, 45}";
-			sepNavVisRange = "{0, 511}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 420}}";
+			sepNavSelRange = "{198, 0}";
+			sepNavVisRange = "{0, 561}";
 			sepNavWindowFrame = "{{84, 252}, {750, 558}}";
 		};
 	};
 	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 1287}}";
-			sepNavSelRange = "{723, 54}";
-			sepNavVisRange = "{294, 893}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 1573}}";
+			sepNavSelRange = "{735, 0}";
+			sepNavVisRange = "{256, 684}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
@@ -81,6 +81,7 @@
 			1D6058900D05DD3D006BFB54 /* CastRoller */,
 		);
 		breakpoints = (
+			635B784713020EB9004B5717 /* WebViewWatcher.m:32 */,
 		);
 		codeSenseManager = 63069ED012FC6335004A0F32 /* Code sense */;
 		executables = (
@@ -299,7 +300,7 @@
 		fRef = 28216C950DB411BC00E5133A /* FirstViewController.h */;
 		name = "FirstViewController.h: 22";
 		rLen = 45;
-		rLoc = 415;
+		rLoc = 465;
 		rType = 0;
 		vrLen = 511;
 		vrLoc = 0;
@@ -309,7 +310,7 @@
 		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
 		name = "FirstViewController.m: 76";
 		rLen = 47;
-		rLoc = 1818;
+		rLoc = 2002;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 1307;
@@ -373,9 +374,9 @@
 	};
 	635B777B1301D593004B5717 /* CollectionViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 910}}";
-			sepNavSelRange = "{889, 46}";
-			sepNavVisRange = "{225, 900}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 962}}";
+			sepNavSelRange = "{1372, 218}";
+			sepNavVisRange = "{1125, 661}";
 		};
 	};
 	635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = {
@@ -414,6 +415,38 @@
 		vrLen = 410;
 		vrLoc = 1443;
 	};
+	635B780E130205C6004B5717 /* WebViewWatcher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
+			sepNavSelRange = "{297, 0}";
+			sepNavVisRange = "{0, 306}";
+		};
+	};
+	635B780F130205C6004B5717 /* WebViewWatcher.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1013, 767}}";
+			sepNavSelRange = "{263, 0}";
+			sepNavVisRange = "{39, 852}";
+		};
+	};
+	635B784713020EB9004B5717 /* WebViewWatcher.m:32 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 635B780F130205C6004B5717 /* WebViewWatcher.m */;
+		functionName = "-webView:shouldStartLoadWithRequest:navigationType:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 32;
+		location = CastRoller;
+		modificationTime = 318901969.629371;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
 	63851E451300DBFD007CAD41 /* index_new.html */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {913, 522}}";
@@ -451,9 +484,9 @@
 	};
 	63851EC51300F6DB007CAD41 /* EpisodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {663, 1274}}";
-			sepNavSelRange = "{2163, 0}";
-			sepNavVisRange = "{1618, 359}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1261}}";
+			sepNavSelRange = "{875, 109}";
+			sepNavVisRange = "{616, 717}";
 		};
 	};
 	63851ECD1300FA0C007CAD41 /* PBXTextBookmark */ = {

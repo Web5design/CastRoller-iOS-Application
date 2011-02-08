@@ -7,9 +7,11 @@
 //
 
 #import "WebViewWatcher.h"
-
+#import "EpisodeViewController.h"
 
 @implementation WebViewWatcher
+
+
 -(WebViewWatcher*) initWithNavController:(UINavigationController *)controller{
 	self = [super init];
 	navController = controller;
@@ -21,11 +23,31 @@
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
-	NSString* path = request.URL.path;
+	
+	
 	
 	// Only allow the initial load
 	if( initLoaded )
 	{
+		NSString* path = request.URL.path;
+		
+		NSRange episodeRange = [path rangeOfString:@"episode.html?eid="];
+		if( episodeRange.location != NSNotFound )
+		{
+			// loading an episode page
+			NSUInteger idStart = episodeRange.location + episodeRange.length;
+			
+			NSString *idString = [path substringFromIndex:idStart];
+			
+			NSInteger id = [idString intValue];
+			
+			EpisodeViewController *controller = [[EpisodeViewController alloc] initWithNibName:@"EpisodeView" bundle:nil];
+			controller.episodeId = id;
+			
+			[navController pushViewController:controller animated:YES];
+			
+		}
+		
 		return NO;
 	}else{
 		return YES;
