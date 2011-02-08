@@ -22,6 +22,7 @@
 		630BF09812FE51E000AAD40C /* json2.js in Resources */ = {isa = PBXBuildFile; fileRef = 638BB3A512FE42FD00114C10 /* json2.js */; };
 		635B777D1301D593004B5717 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B777B1301D593004B5717 /* CollectionViewController.m */; };
 		635B777E1301D593004B5717 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B777C1301D593004B5717 /* CollectionView.xib */; };
+		635B77DA1301F157004B5717 /* date.js in Resources */ = {isa = PBXBuildFile; fileRef = 635B77D81301F149004B5717 /* date.js */; };
 		63851E461300DBFD007CAD41 /* index_new.html in Resources */ = {isa = PBXBuildFile; fileRef = 63851E451300DBFD007CAD41 /* index_new.html */; };
 		63851E481300DC0D007CAD41 /* index_popular.html in Resources */ = {isa = PBXBuildFile; fileRef = 63851E471300DC0D007CAD41 /* index_popular.html */; };
 		63851EC71300F6DB007CAD41 /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */; };
@@ -67,6 +68,7 @@
 		635B777A1301D593004B5717 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		635B777B1301D593004B5717 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		635B777C1301D593004B5717 /* CollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CollectionView.xib; path = Classes/CollectionView.xib; sourceTree = "<group>"; };
+		635B77D81301F149004B5717 /* date.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = date.js; sourceTree = "<group>"; };
 		63851E451300DBFD007CAD41 /* index_new.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_new.html; sourceTree = "<group>"; };
 		63851E471300DC0D007CAD41 /* index_popular.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_popular.html; sourceTree = "<group>"; };
 		63851EC41300F6DB007CAD41 /* EpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeViewController.h; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				63F01FCC1300A3350086A083 /* jquery-textfill-0.1.js */,
+				635B77D81301F149004B5717 /* date.js */,
 				63F01F8B130087DE0086A083 /* nobbies.png */,
 				63F01F751300840F0086A083 /* Gotham-Medium.otf */,
 				63F020331300B5470086A083 /* jquery-ui.min.js */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B77DA1301F157004B5717 /* date.js in Resources */,
 				63F01FCE1300A3650086A083 /* jquery-textfill-0.1.js in Resources */,
 				630BF09512FE51E000AAD40C /* common.js in Resources */,
 				63F020351300B54E0086A083 /* jquery-ui.min.js in Resources */,
