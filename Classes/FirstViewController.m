@@ -39,7 +39,9 @@
 	
 	
 	// Hide the navigation bar
-	self.navigationController.navigationBarHidden = YES;
+	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+	
+	self.title = @"Featured";
 	
 
 	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"index_podcasts" ofType:@"html"];

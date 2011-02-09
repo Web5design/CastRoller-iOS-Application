@@ -31,9 +31,9 @@
 	};
 	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 1573}}";
-			sepNavSelRange = "{735, 0}";
-			sepNavVisRange = "{256, 684}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 1417}}";
+			sepNavSelRange = "{783, 0}";
+			sepNavVisRange = "{545, 858}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
@@ -182,6 +182,9 @@
 			635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = 635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */;
 			635B77CB1301E8A6004B5717 /* PBXTextBookmark */ = 635B77CB1301E8A6004B5717 /* PBXTextBookmark */;
 			635B77FE1302007B004B5717 /* PBXTextBookmark */ = 635B77FE1302007B004B5717 /* PBXTextBookmark */;
+			635B788613022519004B5717 /* PBXTextBookmark */ = 635B788613022519004B5717 /* PBXTextBookmark */;
+			635B788713022519004B5717 /* XCBuildMessageTextBookmark */ = 635B788713022519004B5717 /* XCBuildMessageTextBookmark */;
+			635B788813022519004B5717 /* PBXTextBookmark */ = 635B788813022519004B5717 /* PBXTextBookmark */;
 			63851E4E1300DC7B007CAD41 = 63851E4E1300DC7B007CAD41 /* PBXTextBookmark */;
 			63851E511300DC7B007CAD41 = 63851E511300DC7B007CAD41 /* PBXBookmark */;
 			63851ECD1300FA0C007CAD41 = 63851ECD1300FA0C007CAD41 /* PBXTextBookmark */;
@@ -309,7 +312,7 @@
 		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
 		name = "FirstViewController.m: 76";
 		rLen = 47;
-		rLoc = 2002;
+		rLoc = 2102;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 1307;
@@ -374,8 +377,8 @@
 	635B777B1301D593004B5717 /* CollectionViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 962}}";
-			sepNavSelRange = "{1372, 218}";
-			sepNavVisRange = "{1122, 664}";
+			sepNavSelRange = "{866, 21}";
+			sepNavVisRange = "{661, 710}";
 		};
 	};
 	635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = {
@@ -416,17 +419,46 @@
 	};
 	635B780E130205C6004B5717 /* WebViewWatcher.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
-			sepNavSelRange = "{297, 0}";
-			sepNavVisRange = "{0, 306}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 420}}";
+			sepNavSelRange = "{316, 0}";
+			sepNavVisRange = "{0, 436}";
 		};
 	};
 	635B780F130205C6004B5717 /* WebViewWatcher.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1013, 819}}";
-			sepNavSelRange = "{711, 0}";
-			sepNavVisRange = "{559, 750}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 1053}}";
+			sepNavSelRange = "{1581, 0}";
+			sepNavVisRange = "{1042, 913}";
 		};
+	};
+	635B788613022519004B5717 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */;
+		name = "EpisodeViewController.m: 96";
+		rLen = 0;
+		rLoc = 2163;
+		rType = 0;
+		vrLen = 410;
+		vrLoc = 1618;
+	};
+	635B788713022519004B5717 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'this' undeclared (first use in this function)";
+		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 43;
+		rType = 1;
+	};
+	635B788813022519004B5717 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
+		name = "FirstViewController.m: 44";
+		rLen = 0;
+		rLoc = 1018;
+		rType = 0;
+		vrLen = 424;
+		vrLoc = 832;
 	};
 	63851E451300DBFD007CAD41 /* index_new.html */ = {
 		uiCtxt = {
@@ -465,9 +497,9 @@
 	};
 	63851EC51300F6DB007CAD41 /* EpisodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {663, 1274}}";
-			sepNavSelRange = "{2163, 0}";
-			sepNavVisRange = "{1618, 359}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1261}}";
+			sepNavSelRange = "{701, 0}";
+			sepNavVisRange = "{251, 932}";
 		};
 	};
 	63851ECD1300FA0C007CAD41 /* PBXTextBookmark */ = {
@@ -535,6 +567,13 @@
 		name = "/Users/wspaetzel/Documents/Projects/CastRoller-iOS-Application/CastRoller/CastRoller-Info.plist";
 		rLen = 0;
 		rLoc = 2147483647;
+	};
+	638BB39F12FE42FD00114C10 /* channel.html */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {913, 962}}";
+			sepNavSelRange = "{0, 1440}";
+			sepNavVisRange = "{880, 474}";
+		};
 	};
 	638BB3A012FE42FD00114C10 /* common.js */ = {
 		uiCtxt = {

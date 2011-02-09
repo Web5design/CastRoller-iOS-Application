@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="9"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -42,12 +42,12 @@
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIWebView" id="304116648">
+					<object class="IBUIWebView" id="743012596">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{700, 655}</string>
+						<string key="NSFrame">{{-12, 0}, {724, 655}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="435967142">
+						<object class="NSColor" key="IBUIBackgroundColor" id="307022828">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
 						</object>
@@ -56,21 +56,21 @@
 						<int key="IBUIDataDetectorTypes">1</int>
 						<bool key="IBUIDetectsPhoneNumbers">YES</bool>
 					</object>
-					<object class="IBUIWebView" id="397977115">
+					<object class="IBUIWebView" id="602308000">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{708, 37}, {316, 618}}</string>
+						<string key="NSFrame">{{720, 37}, {304, 618}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="IBUIBackgroundColor" ref="435967142"/>
+						<reference key="IBUIBackgroundColor" ref="307022828"/>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIDataDetectorTypes">1</int>
 						<bool key="IBUIDetectsPhoneNumbers">YES</bool>
 					</object>
-					<object class="IBUISegmentedControl" id="541307003">
+					<object class="IBUISegmentedControl" id="863610046">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{708, 0}, {316, 30}}</string>
+						<string key="NSFrame">{{720, 0}, {304, 30}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -144,7 +144,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">episodeWebView</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="304116648"/>
+						<reference key="destination" ref="743012596"/>
 					</object>
 					<int key="connectionID">8</int>
 				</object>
@@ -174,25 +174,25 @@
 						<reference key="object" ref="766721923"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="397977115"/>
-							<reference ref="541307003"/>
-							<reference ref="304116648"/>
+							<reference ref="863610046"/>
+							<reference ref="743012596"/>
+							<reference ref="602308000"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="304116648"/>
+						<reference key="object" ref="743012596"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="397977115"/>
+						<reference key="object" ref="602308000"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="541307003"/>
+						<reference key="object" ref="863610046"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</object>
@@ -220,7 +220,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABEIoAAwpwAAA</bytes>
 					</object>
-					<string>{{80, 90}, {1039, 672}}</string>
+					<string>{{325, 90}, {1039, 766}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -228,7 +228,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABEMcAAxAGAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABEJEAAxCNAAA</bytes>
 					</object>
 				</object>
 			</object>

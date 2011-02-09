@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WebViewWatcher.h"
 
 @interface CollectionViewController : UIViewController {
-
+	IBOutlet UIWebView *webView;
+	WebViewWatcher *watcher;
+	
 }
-- (IBAction)viewEpisodePressed:(id)sender;
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
 
 @end

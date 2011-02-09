@@ -9,8 +9,11 @@
 
 #import "CollectionViewController.h"
 #import "EpisodeViewController.h"
+#import "WebViewWatcher.h"
 
 @implementation CollectionViewController
+
+@synthesize webView;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -30,6 +33,22 @@
 	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 	self.navigationController.toolbarHidden = YES;
 
+	
+	if( watcher == nil)
+	{
+		watcher = [[WebViewWatcher alloc] initWithNavController:self.navigationController];
+	}
+	
+	webView.delegate= watcher;
+	
+			
+	NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"collection" ofType:@"html"];
+	
+	NSURL *url = [NSURL fileURLWithPath:urlAddress];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	
+	[webView loadRequest:requestObj];
+	
     [super viewDidLoad];
 	
 }

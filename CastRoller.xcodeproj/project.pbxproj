@@ -24,6 +24,7 @@
 		635B777E1301D593004B5717 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B777C1301D593004B5717 /* CollectionView.xib */; };
 		635B77DA1301F157004B5717 /* date.js in Resources */ = {isa = PBXBuildFile; fileRef = 635B77D81301F149004B5717 /* date.js */; };
 		635B7810130205C6004B5717 /* WebViewWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B780F130205C6004B5717 /* WebViewWatcher.m */; };
+		635B789213022AB5004B5717 /* collection.html in Resources */ = {isa = PBXBuildFile; fileRef = 635B789113022AB5004B5717 /* collection.html */; };
 		63851E461300DBFD007CAD41 /* index_new.html in Resources */ = {isa = PBXBuildFile; fileRef = 63851E451300DBFD007CAD41 /* index_new.html */; };
 		63851E481300DC0D007CAD41 /* index_popular.html in Resources */ = {isa = PBXBuildFile; fileRef = 63851E471300DC0D007CAD41 /* index_popular.html */; };
 		63851EC71300F6DB007CAD41 /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63851EC51300F6DB007CAD41 /* EpisodeViewController.m */; };
@@ -72,6 +73,7 @@
 		635B77D81301F149004B5717 /* date.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = date.js; sourceTree = "<group>"; };
 		635B780E130205C6004B5717 /* WebViewWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewWatcher.h; sourceTree = "<group>"; };
 		635B780F130205C6004B5717 /* WebViewWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewWatcher.m; sourceTree = "<group>"; };
+		635B789113022AB5004B5717 /* collection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = collection.html; sourceTree = "<group>"; };
 		63851E451300DBFD007CAD41 /* index_new.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_new.html; sourceTree = "<group>"; };
 		63851E471300DC0D007CAD41 /* index_popular.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_popular.html; sourceTree = "<group>"; };
 		63851EC41300F6DB007CAD41 /* EpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeViewController.h; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				63F020511300C0B60086A083 /* index_channels.html */,
 				63851E451300DBFD007CAD41 /* index_new.html */,
 				63851E471300DC0D007CAD41 /* index_popular.html */,
+				635B789113022AB5004B5717 /* collection.html */,
 			);
 			name = Html;
 			path = html;
@@ -319,6 +322,7 @@
 				63851E481300DC0D007CAD41 /* index_popular.html in Resources */,
 				63851EC81300F6DB007CAD41 /* EpisodeView.xib in Resources */,
 				635B777E1301D593004B5717 /* CollectionView.xib in Resources */,
+				635B789213022AB5004B5717 /* collection.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
