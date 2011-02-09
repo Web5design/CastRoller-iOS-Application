@@ -22,8 +22,7 @@
 	return self;
 }
 
-- (NSDictionary *) parseQueryString:(NSURL *)url
-{
+- (NSDictionary*) parseQueryString:(NSURL *)url{
 	NSArray *parameters = [[url query] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"=&"]];
 	NSMutableDictionary *keyValueParm = [NSMutableDictionary dictionary];
 	
@@ -47,14 +46,15 @@
 		if( episodeRange.location != NSNotFound )
 		{
 			
-			NSDictionary *keyValueParm = [parseQueryString request.URL];
+			NSArray *parameters = [[request.URL query] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"=&"]];
+			NSMutableDictionary *keyValueParm = [NSMutableDictionary dictionary];
 			
-			/*
-			// loading an episode page
-			NSUInteger idStart = episodeRange.location + episodeRange.length;
+			for (int i = 0; i < [parameters count]; i=i+2) {
+				[keyValueParm setObject:[parameters objectAtIndex:i+1] forKey:[parameters objectAtIndex:i]];
+			}
 			
-			NSString *idString = [path substringFromIndex:idStart];
-			*/
+		
+						
 			NSString* idString = [keyValueParm objectForKey:@"eid"];
 			
 			NSInteger id = [idString intValue];

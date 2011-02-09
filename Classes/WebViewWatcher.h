@@ -14,7 +14,7 @@
 	UINavigationController *navController;
 }
 
-- (NSDictionary *) parseQueryString:(NSURL *)url;
--(WebViewWatcher*) initWithNavController:(UINavigationController *)controller;
+- (NSDictionary*) parseQueryString:(NSURL *)url;
+- (WebViewWatcher*) initWithNavController:(UINavigationController *)controller;
 
 @end
