@@ -31,7 +31,7 @@
 
 	if( watcher == nil)
 	{
-	   watcher = [WebViewWatcher alloc];
+	   watcher = [[WebViewWatcher alloc] initWithNavController:self.navigationController];
 	}
 	
 	myWebView.delegate= watcher;

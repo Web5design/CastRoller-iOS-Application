@@ -81,7 +81,6 @@
 			1D6058900D05DD3D006BFB54 /* CastRoller */,
 		);
 		breakpoints = (
-			635B784713020EB9004B5717 /* WebViewWatcher.m:32 */,
 		);
 		codeSenseManager = 63069ED012FC6335004A0F32 /* Code sense */;
 		executables = (
@@ -367,7 +366,7 @@
 	};
 	635B777A1301D593004B5717 /* CollectionViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {913, 397}}";
+			sepNavIntBoundsRect = "{{0, 0}, {913, 420}}";
 			sepNavSelRange = "{239, 42}";
 			sepNavVisRange = "{0, 288}";
 		};
@@ -376,7 +375,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 962}}";
 			sepNavSelRange = "{1372, 218}";
-			sepNavVisRange = "{1125, 661}";
+			sepNavVisRange = "{1122, 664}";
 		};
 	};
 	635B77CA1301E8A6004B5717 /* XCBuildMessageTextBookmark */ = {
@@ -424,28 +423,10 @@
 	};
 	635B780F130205C6004B5717 /* WebViewWatcher.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1013, 767}}";
-			sepNavSelRange = "{263, 0}";
-			sepNavVisRange = "{39, 852}";
+			sepNavIntBoundsRect = "{{0, 0}, {1013, 819}}";
+			sepNavSelRange = "{711, 0}";
+			sepNavVisRange = "{559, 750}";
 		};
-	};
-	635B784713020EB9004B5717 /* WebViewWatcher.m:32 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 635B780F130205C6004B5717 /* WebViewWatcher.m */;
-		functionName = "-webView:shouldStartLoadWithRequest:navigationType:";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 32;
-		location = CastRoller;
-		modificationTime = 318901969.629371;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	63851E451300DBFD007CAD41 /* index_new.html */ = {
 		uiCtxt = {
@@ -484,9 +465,9 @@
 	};
 	63851EC51300F6DB007CAD41 /* EpisodeViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1261}}";
-			sepNavSelRange = "{875, 109}";
-			sepNavVisRange = "{616, 717}";
+			sepNavIntBoundsRect = "{{0, 0}, {663, 1274}}";
+			sepNavSelRange = "{2163, 0}";
+			sepNavVisRange = "{1618, 359}";
 		};
 	};
 	63851ECD1300FA0C007CAD41 /* PBXTextBookmark */ = {

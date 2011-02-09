@@ -22,6 +22,18 @@
 	return self;
 }
 
+- (NSDictionary *) parseQueryString:(NSURL *)url
+{
+	NSArray *parameters = [[url query] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"=&"]];
+	NSMutableDictionary *keyValueParm = [NSMutableDictionary dictionary];
+	
+	for (int i = 0; i < [parameters count]; i=i+2) {
+		[keyValueParm setObject:[parameters objectAtIndex:i+1] forKey:[parameters objectAtIndex:i]];
+	}
+	
+	return keyValueParm;
+}
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
 	
 	
@@ -31,13 +43,19 @@
 	{
 		NSString* path = request.URL.path;
 		
-		NSRange episodeRange = [path rangeOfString:@"episode.html?eid="];
+		NSRange episodeRange = [path rangeOfString:@"episode.html"];
 		if( episodeRange.location != NSNotFound )
 		{
+			
+			NSDictionary *keyValueParm = [parseQueryString request.URL];
+			
+			/*
 			// loading an episode page
 			NSUInteger idStart = episodeRange.location + episodeRange.length;
 			
 			NSString *idString = [path substringFromIndex:idStart];
+			*/
+			NSString* idString = [keyValueParm objectForKey:@"eid"];
 			
 			NSInteger id = [idString intValue];
 			
@@ -53,6 +71,8 @@
 		return YES;
 	}
 }
+
+
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
 	initLoaded = YES;
